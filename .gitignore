@@ -1,0 +1,10 @@
+/*
+
+!.gitignore
+!src/
+!bin/
+bin/*
+!bin/base_p/
+
+**.DS_Store
+
