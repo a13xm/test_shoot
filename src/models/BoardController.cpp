@@ -1,11 +1,4 @@
-//
-//  BoardController.cpp
-//  Test
-//
-//  Created by alexandre on 05/03/2017.
-//
-//
-
+#include "stdafx.h"
 #include "BoardController.h"
 
 void BoardController::Update(float dt) {
