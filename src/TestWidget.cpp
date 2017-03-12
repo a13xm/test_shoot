@@ -110,10 +110,12 @@ void TestWidget::Draw()
 	//
 	// И рисуем объект в этих координатах
 	//
-	Render::device.PushMatrix();
-	Render::device.MatrixTranslate(currentPosition.x, currentPosition.y, 0);
-	_tex3->Draw();
-	Render::device.PopMatrix();
+//	Render::device.PushMatrix();
+//	Render::device.MatrixTranslate(currentPosition.x, currentPosition.y, 0);
+	_tex3->Bind();
+	Render::DrawQuad(currentPosition.x, currentPosition.y, _tex3->Width(), _tex3->Height());
+//	_tex3->Draw();
+//	Render::device.PopMatrix();
 
 	//
 	// Этот вызов отключает текстурирование при отрисовке.

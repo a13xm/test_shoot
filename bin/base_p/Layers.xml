@@ -2,7 +2,8 @@
 <GUI>
 	<Layer name="TestLayer">
 		<Controls>
-			<TestWidget name="TestWidget"/>
+<!--			<TestWidget name="TestWidget"/>-->
+            <MainWidget name="MainWidget"/>
 		</Controls>
 	</Layer>
 </GUI>

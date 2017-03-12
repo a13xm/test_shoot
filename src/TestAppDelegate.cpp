@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "TestAppDelegate.h"
-#include "TestWidget.h"
-#include "models/BoardController.h"
+//#include "TestWidget.h"
+#include "MainWidget.h"
 
 enum {
 	WINDOW_WIDTH = 1024,
@@ -35,7 +35,8 @@ void TestAppDelegate::RegisterTypes()
 	// Чтобы можно было декларативно использовать виджет в xml по имени,
 	// его необходимо зарегистрировать таким образом.
 	//
-	REGISTER_WIDGET_XML(TestWidget, "TestWidget");
+//	REGISTER_WIDGET_XML(TestWidget, "TestWidget");
+	REGISTER_WIDGET_XML(MainWidget, "MainWidget");
 }
 
 void TestAppDelegate::LoadResources()
@@ -51,7 +52,6 @@ void TestAppDelegate::OnResourceLoaded() {
 	if (Core::appInstance->AllResourcesLoaded()) {
 		Core::appInstance->SetLoaded();
 	}
-	Core::controllerKernel.addController(new BoardController());
 }
 
 void TestAppDelegate::OnPostDraw() {
